@@ -1,2 +1,3 @@
-# eslint-config
-A collection of common rules I use on my projects
+# edusig Eslint configs
+
+A collection of reusable eslint configs.

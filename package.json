@@ -1,0 +1,76 @@
+{
+  "name": "@edusig/eslint-config",
+  "version": "1.0.0",
+  "description": "A collection of ESLint configurations for BLB Ventures projects and packages",
+  "main": "main.js",
+  "module": "main.mjs",
+  "files": [
+    "main.js",
+    "main.mjs",
+    "configs/*.js"
+  ],
+  "homepage": "https://github.com/edusig/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edusig/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edusig/eslint-config/issues"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "keywords": [],
+  "author": "Eduardo S Ciciliato",
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "require": "./main.js",
+      "import": "./main.mjs"
+    },
+    "./configs": "./configs",
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=6",
+    "@typescript-eslint/parser": ">=6",
+    "eslint": ">=8",
+    "eslint-config-prettier": ">=9",
+    "eslint-import-resolver-typescript": ">=3",
+    "eslint-plugin-import": ">=2.29",
+    "eslint-plugin-jsx-a11y": ">=6.7",
+    "eslint-plugin-prettier": ">=5.0",
+    "eslint-plugin-react": ">=7.33",
+    "eslint-plugin-react-hooks": ">=4.6",
+    "semantic-release": "^22.0.5"
+  },
+  "contributors": [
+    {
+      "name": "Eduardo S Ciciliato",
+      "url": "https://eduardociciliato.com.br"
+    }
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.11"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=5",
+    "@typescript-eslint/parser": ">=5",
+    "eslint": ">=8",
+    "eslint-config-prettier": ">=8",
+    "eslint-import-resolver-typescript": ">=3",
+    "eslint-plugin-import": ">=2.27",
+    "eslint-plugin-jsx-a11y": ">=6.7",
+    "eslint-plugin-prettier": ">=4.2",
+    "eslint-plugin-react": ">=7.32",
+    "eslint-plugin-react-hooks": ">=4.6"
+  }
+}
